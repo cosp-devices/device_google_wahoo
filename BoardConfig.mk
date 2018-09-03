@@ -30,7 +30,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
-TARGET_KERNEL_CONFIG := custom_defconfig
+TARGET_KERNEL_CONFIG := flash_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 
@@ -82,7 +82,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 TARGET_COPY_OUT_VENDOR := vendor
 
-BOARD_PREBUILT_VENDORIMAGE := true
+#BOARD_PREBUILT_VENDORIMAGE := true
 
 # Install odex files into the other system image
 BOARD_USES_SYSTEM_OTHER_ODEX := true
